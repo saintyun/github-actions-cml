@@ -11,8 +11,8 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -U sklearn
-          pip install -U matplotlib
+          pip install scikit-learn
+          pip install matplotlib
           pip install seaborn
           pip install -r requirements.txt
           python train.py
