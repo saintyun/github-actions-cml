@@ -10,8 +10,7 @@ jobs:
       - name: Train model
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run:
-          pip install --upgrade pip
+        run: |
           pip install -U scikit-learn
           pip install -U matplotlib
           pip install seaborn
